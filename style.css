@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0f0a;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+.terminal {
+  max-width: 900px;
+  margin: 0 auto;
+  cursor: text;
+}
+
+.output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.line {
+  margin-bottom: 6px;
+}
+
+.cmd-echo {
+  color: #88ff88;
+}
+
+.error {
+  color: #ff5555;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.prompt {
+  color: #33ff33;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#command-input {
+  background: transparent;
+  border: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  caret-color: #33ff33;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 12px;
+  }
+  #command-input {
+    font-size: 14px;
+  }
+}
